@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  	<title>Hello World</title>
+  	<meta charset="utf-8">
+  	
+  	<!-- Custom js and css -->
+  	<link rel="stylesheet" th:href="@{/css/custom.css}"/>
+  	<script th:src="@{/js/custom.js}"></script>
+  
+	<!-- Materialize js and css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</head>
+
+<body th:object="${command}">
+
+	<div class="valign-wrapper full-height">
+  		<h1 class="valign center-block" th:text="*{text}"></h1>
+	</div>
+  
+</body>
+
+</html>
